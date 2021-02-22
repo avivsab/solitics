@@ -1,0 +1,12 @@
+tr {
+  display: flex;
+  gap: 65px;
+  justify-content: space-around;
+  border-bottom: 1px solid gray;
+  align-items: center;
+  padding-bottom: 5px;
+
+  &.main-row {
+    border-bottom: 2.5px solid #36f4a2;
+  }
+}

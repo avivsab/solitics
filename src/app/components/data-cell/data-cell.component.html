@@ -1,0 +1,15 @@
+<td>
+  <div [ngSwitch]="formatter">
+    <div *ngSwitchCase="'course'" class={{formatter}}>
+      <app-course-cell [name]="data.name" [date]="data.date"></app-course-cell>
+    </div>
+    <div *ngSwitchCase="'icon'" class={{formatter}}>
+      <app-icon [svg]="data"></app-icon>
+      <span>{{data}}</span>
+    </div>
+    <div *ngSwitchDefault class={{data.title}}>
+      <div>{{data.value}}</div>
+      <span *ngIf="data.value || data.value===0">{{data.title}}</span>
+    </div>
+  </div>
+</td>

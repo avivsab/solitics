@@ -1,0 +1,75 @@
+td {
+  flex: 0 1 calc(15% - 8px);
+  text-align: center;
+  color: gray;
+  display: flex;
+  min-width: 25px;
+  text-align: center;
+
+  &.course {
+    div {
+      text-align: right;
+      color: #63b5f6;
+    }
+  }
+
+  span {
+    text-align: left;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+  }
+
+  div {
+    div {
+      span {
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+
+.active {
+  div {
+
+    color: green;
+    font-weight: bold;
+
+  }
+}
+
+.new {
+  div {
+
+    color: blue;
+    font-weight: bold;
+  }
+
+}
+
+.removed {
+  div {
+
+    color: red;
+    font-weight: bold;
+  }
+
+}
+
+.total {
+  div {
+
+    color: #727272;
+    font-weight: bold;
+  }
+
+}
+
+
+div {
+  .icon {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+}
