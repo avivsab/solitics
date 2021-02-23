@@ -33,7 +33,6 @@ export class DataTableComponent implements OnInit, OnChanges {
   }
 
   getReport() {
-    console.log(this.studies)
     this.report = this.studies.map(s => {
       const data = {
         course: s.course,
@@ -55,7 +54,7 @@ export class DataTableComponent implements OnInit, OnChanges {
         data.icon = 'Dynamic';
       } else if (s?.state?.total == 0) {
         data.icon = 'Empty';
-      }
+      } 
       return data;
     });
 

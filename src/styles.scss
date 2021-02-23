@@ -3,6 +3,16 @@
     direction: rtl;
 }
 
-ul {
-    list-style-type: none;
+tr.main-row {
+    app-data-cell {
+        
+        td.first-col {
+            app-course-cell {
+                p {
+
+                    color: #000;
+                }
+            }
+        }
+    }
 }

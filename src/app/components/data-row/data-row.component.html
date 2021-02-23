@@ -1,3 +1,3 @@
 <tr [class.main-row]="main === true">
-  <app-data-cell *ngFor="let col of columns; let i = index" [data]="reportItem[col.name]" [formatter]="col.formatter"></app-data-cell>
+  <app-data-cell *ngFor="let col of columns; let i = index" [data]="reportItem[col.name]" [formatter]="col.formatter" [first]="i===0"></app-data-cell>
 </tr>

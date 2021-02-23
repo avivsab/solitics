@@ -6,8 +6,9 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./data-cell.component.scss']
 })
 export class DataCellComponent implements OnInit {
-@Input() data: object[];
-@Input() formatter: object;
+@Input() data: object;
+@Input() formatter: string;
+@Input() first: boolean;
   constructor() { }
 
   ngOnInit(): void {

@@ -1,4 +1,4 @@
-<td>
+<td [class.first-col]="first === true">
   <div [ngSwitch]="formatter">
     <div *ngSwitchCase="'course'" class={{formatter}}>
       <app-course-cell [name]="data.name" [date]="data.date"></app-course-cell>

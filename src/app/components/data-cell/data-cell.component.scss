@@ -3,7 +3,7 @@ td {
   text-align: center;
   color: gray;
   display: flex;
-  min-width: 25px;
+  min-width: 45px;
   text-align: center;
 
   &.course {
@@ -27,6 +27,7 @@ td {
       }
     }
   }
+  
 }
 
 .active {
