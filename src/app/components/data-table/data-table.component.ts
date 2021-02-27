@@ -10,7 +10,8 @@ import { IStudies } from "../../interfaces/Studies";
 export class DataTableComponent implements OnInit, OnChanges {
   @Input() studies: IStudies[];
   report = [];
-  secodaryRowsArr = [];
+
+  
   // Make sure we take only this columns from the data object
   columns = [
     { name: 'course', formatter: 'course' },

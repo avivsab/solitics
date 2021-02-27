@@ -1,2 +1,20 @@
 <p>{{name}}</p>
+<input 
+*ngIf="isEditing" 
+placeholder="Edit course name" 
+#nameInput 
+(change)="setName(nameInput.value)"  
+autofocus
+value={{name}}
+>
 <span>{{date}}</span>
+<input 
+*ngIf="isEditing" 
+placeholder="Edit course date" 
+#dateInput 
+(change)="setDate(dateInput.value)"
+value={{date}}
+>
+<div class="edit" (click)="editCourseDetails()" *ngIf="!isEditing">
+</div>
+<button type="submit" *ngIf="isEditing" (click)="isEditing = false">OK</button>

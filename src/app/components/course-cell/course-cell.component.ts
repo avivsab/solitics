@@ -9,9 +9,19 @@ export class CourseCellComponent implements OnInit {
   @Input() name: string;
   @Input() date: string;
 
+  isEditing = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  editCourseDetails() {
+    this.isEditing = true;
+  }
+  setName(name) {
+    this.name = name
+  }
+  setDate(date) {
+    this.date = date;
+  }
 }

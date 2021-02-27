@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 
 import { IStudies } from "./interfaces/Studies";
-import { Observable , throwError} from 'rxjs';
+import { Observable } from 'rxjs';
 
 import { CourseDataProvider } from './services/course-data-provider';
-import { catchError, map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
